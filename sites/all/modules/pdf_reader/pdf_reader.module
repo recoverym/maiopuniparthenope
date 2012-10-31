@@ -114,7 +114,7 @@ function pdf_reader_field_formatter_settings_summary($field, $instance, $view_mo
   $display = $instance['display'][$view_mode];
   $settings = $display['settings'];
 
-  $summary = 'Size: ' . $settings['pdf_width'] . 'x' . $settings['pdf_height'] 
+  $summary = 'Size: ' . $settings['pdf_width'] . 'x' . $settings['pdf_height']
            . ' Using: ' . $renderers[$settings['renderer']]
            . '<br> Download Link: ' . ($settings['download'] == 1 ? 'YES' : 'NO')
            . ' Use colorbox: ' . ($settings['colorbox'] == 1 ? 'YES' : 'NO')
@@ -174,16 +174,16 @@ function theme_pdf_reader($variables) {
               . '" scrolling="no'
               . '" style="border: none;"></iframe>';
       break;
-    
-    case 1: 
+
+    case 1:
       $output = '<iframe id="pdf_reader" src="https://viewer.zoho.com/docs/urlview.do?embed=true&url='
               . urlencode($file_url)
               . '" width="' . $variables['settings']['pdf_width']
               . '" height="' . $variables['settings']['pdf_height']
               . '" style="border: none;"></iframe>';
       break;
-    
-    case 2: 
+
+    case 2:
       $output = '<object id="pdf_reader" data="' . $file_url . '#view=Fit' . '" '
               . 'type="application/pdf' . '" '
               . 'width="' . $variables['settings']['pdf_width'] . '" '
@@ -199,8 +199,11 @@ function theme_pdf_reader($variables) {
       break;
 
     case 3:
-      _pdf_reader_load_pdf_js($file_url);
-      $output = theme('pdf_js');
+      /*_pdf_reader_load_pdf_js($file_url);
+      $output = theme('pdf_js');*/
+      $output = '<iframe id="pdf_reader" frameborder="no" width="99%" height="600px" src="';
+      $output .= $GLOBALS['base_url'] . '/' . libraries_get_path('pdfjs') . '/web/viewer.html?file=' . $file_url;
+      $output .= '"></iframe>';
       break;
   }
 
@@ -215,9 +218,9 @@ function theme_pdf_reader($variables) {
       'attributes' => array('class' => array('colorbox-inline', 'show')),
       'query' => array(
         'width' => $variables['settings']['pdf_width'],
-        'height' => $variables['settings']['pdf_height'], 
+        'height' => $variables['settings']['pdf_height'],
         'inline' => 'true',
-      ), 
+      ),
       'fragment' => 'pdf_reader',
     );
 
@@ -225,7 +228,7 @@ function theme_pdf_reader($variables) {
 
     $output .= '<div style="display:none">' . $html . '</div>';
   }
-  
+
   return $output;
 }
 

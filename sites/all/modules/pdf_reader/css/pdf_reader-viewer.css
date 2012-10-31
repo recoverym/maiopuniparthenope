@@ -1,6 +1,6 @@
 * {
-  padding: 0;
-  margin: 0;
+/*  padding: 0;
+  margin: 0;*/
 }
 
 html {
@@ -96,6 +96,7 @@ html[dir='rtl'] .innerCenter {
 #outerContainer {
   width: 100%;
   height: 100%;
+  position:relative;
 }
 
 #sidebarContainer {
@@ -111,6 +112,7 @@ html[dir='rtl'] .innerCenter {
   -o-transition-timing-function: ease;
   transition-duration: 200ms;
   transition-timing-function: ease;
+  position:relative;
   
 }
 html[dir='ltr'] #sidebarContainer {

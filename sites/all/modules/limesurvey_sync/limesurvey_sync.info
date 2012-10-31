@@ -1,0 +1,13 @@
+name = LimeSurvey Sync
+description = Configuring synchronization modules between LimeSurvey and Drupal and providing the API
+package = LimeSurvey
+core = 7.x
+
+
+
+; Information added by drupal.org packaging script on 2012-06-20
+version = "7.x-1.1"
+core = "7.x"
+project = "limesurvey_sync"
+datestamp = "1340186179"
+

@@ -1,0 +1,2512 @@
+# $Id$
+#
+# LANGUAGE translation of the LimeSurvey Synchronization module (Drupal)
+# Copyright 2012 Julien Duteil <julienledut@gmail.com>
+# Generated from files:
+#  limesurvey_sync.admin.inc: n/a
+#  ls_survey/ls_survey.import.inc: n/a
+#  ls_survey/ls_survey.type.inc: n/a
+#  ls_api/limesurvey_sync_api_import.inc: n/a
+#  limesurvey_sync.inc: n/a
+#  ls_survey/ls_survey.module: n/a
+#  limesurvey_sync.module: n/a
+#  limesurvey_sync.install: n/a
+#  limesurvey_sync.info: n/a
+#  ls_answ/ls_answ.info: n/a
+#  ls_survey/ls_survey.info: n/a
+#  ls_answ/ls_answ.answers.inc: n/a
+#  ls_survey/ls_survey.inc: n/a
+#  ls_survey/views/ls_survey.views.inc: n/a
+#  ls_answ/ls_answ.module: n/a
+#  ls_answ/ls_answ.form.inc: n/a
+#  ls_answ/ls_answ.toform.inc: n/a
+#  ls_answ/ls_answ.inc: n/a
+#  ls_answ/ls_answ.rules.inc: n/a
+#  ls_answ/ls_answ.sync.inc: n/a
+#  ls_answ/views/ls_answ.views.inc: n/a
+#  ls_api/limesurvey_sync_api_answ.inc: n/a
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: limesurvey_sync\n"
+"POT-Creation-Date: 2012-02-26 23:17+0000\n"
+"PO-Revision-Date: 2012-06-20 12:00+0000\n"
+"Last-Translator: Julien Duteil <julienledut@gmail.com>\n"
+"Language-Team: Julien Duteil <julienledut@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: limesurvey_sync.admin.inc:35
+msgid "Testing interface"
+msgstr ""
+
+#: limesurvey_sync.admin.inc:36
+msgid "Show testing results for synchronization between your Drupal site and your LimeSurvey site."
+msgstr ""
+
+#: limesurvey_sync.admin.inc:37
+msgid "Any test should fail."
+msgstr ""
+
+#: limesurvey_sync.admin.inc:52
+msgid "LimeSurvey synchronization settings"
+msgstr ""
+
+#: limesurvey_sync.admin.inc:57
+msgid "LimeSurvey site path"
+msgstr ""
+
+#: limesurvey_sync.admin.inc:59
+msgid "It can be a relative path or an external website"
+msgstr ""
+
+#: limesurvey_sync.admin.inc:65
+msgid "Adjust time between the Drupal server and the LimeSurvey server"
+msgstr ""
+
+#: limesurvey_sync.admin.inc:67
+msgid "in seconds"
+msgstr ""
+
+#: limesurvey_sync.admin.inc:76;109;142
+msgid "Test settings (don't save)"
+msgstr ""
+
+#: limesurvey_sync.admin.inc:81
+msgid "Save"
+msgstr ""
+
+#: limesurvey_sync.admin.inc:94;104 ls_survey/ls_survey.import.inc:217 ls_survey/ls_survey.type.inc:634
+msgid "The '%setting' setting is not valid."
+msgstr ""
+
+#: limesurvey_sync.admin.inc:98
+msgid "Delete trailing slash."
+msgstr ""
+
+#: limesurvey_sync.admin.inc:149
+msgid "New settings have been saved."
+msgstr ""
+
+#: limesurvey_sync.admin.inc:155
+msgid "Settings haven't been changed."
+msgstr ""
+
+#: limesurvey_sync.admin.inc:190
+msgid "Tested property"
+msgstr ""
+
+#: limesurvey_sync.admin.inc:191
+msgid "Test result"
+msgstr ""
+
+#: limesurvey_sync.admin.inc:192 ls_api/limesurvey_sync_api_import.inc:191
+msgid "Comment"
+msgstr ""
+
+#: limesurvey_sync.admin.inc:193
+msgid "Help"
+msgstr ""
+
+#: limesurvey_sync.inc:31
+msgid "Open the LimeSurvey admin interface in a new window"
+msgstr ""
+
+#: limesurvey_sync.inc:218
+msgid "The LimeSurvey site hosting server test must succeed in order to run this test."
+msgstr ""
+
+#: limesurvey_sync.inc:219
+msgid "You need to fix the test of the LimeSurvey site hosting server first."
+msgstr ""
+
+#: limesurvey_sync.inc:222
+msgid "The LimeSurvey database connexion informations are configured"
+msgstr ""
+
+#: limesurvey_sync.inc:227
+msgid "but the LimeSurvey database prefix is not valid, choose a value other than %invalid."
+msgstr ""
+
+#: limesurvey_sync.inc:227
+msgid "empty"
+msgstr ""
+
+#: limesurvey_sync.inc:231
+msgid "The LimeSurvey database connexion informations are not configured"
+msgstr ""
+
+#: limesurvey_sync.inc:235
+msgid "The LimeSurvey database connexion informations must be appended into the Drupal file <em>sites/default/settings.php</em>, adding the lines below after the $databases['default']['default'] variable :"
+msgstr ""
+
+#: limesurvey_sync.inc:243;244
+msgid "or another value"
+msgstr ""
+
+#: limesurvey_sync.inc:246
+msgid "replacing each field by the correct value."
+msgstr ""
+
+#: limesurvey_sync.inc:247
+msgid "You can find the correct <em>LimeSurvey database prefix</em> value opening the <em>config.php</em> file stored into your LimeSurvey site root folder (it is the <em>$dbprefix</em> variable value)"
+msgstr ""
+
+#: limesurvey_sync.inc:248
+msgid "Note that if you host your LimeSurvey site and your Drupal site on the same database, you have to choose distinct prefix."
+msgstr ""
+
+#: limesurvey_sync.inc:252
+msgid "The LimeSurvey site hosting server"
+msgstr ""
+
+#: limesurvey_sync.inc:269
+msgid "The 'surveys' database table of the LimeSurvey site has been successfully found"
+msgstr ""
+
+#: limesurvey_sync.inc:269
+msgid "The 'surveys' database table of the LimeSurvey site has not been found"
+msgstr ""
+
+#: limesurvey_sync.inc:270
+msgid "If it fails, yo may need to check :"
+msgstr ""
+
+#: limesurvey_sync.inc:272
+msgid "either your LimeSurvey database connexion informations,"
+msgstr ""
+
+#: limesurvey_sync.inc:273
+msgid "or the <em>LimeSurvey database prefix</em> value"
+msgstr ""
+
+#: limesurvey_sync.inc:278
+msgid "The LimeSurvey site database tables"
+msgstr ""
+
+#: limesurvey_sync.inc:291
+msgid "Open the link into a new window"
+msgstr ""
+
+#: limesurvey_sync.inc:296
+msgid "You need to manually test the !url URL, making sure you can reach your LimeSurvey site."
+msgstr ""
+
+#: limesurvey_sync.inc:303
+msgid "<em>allow_url_fopen</em> should be set to '<em>On</em>' into the <em>php.ini</em> file for this test."
+msgstr ""
+
+#: limesurvey_sync.inc:304;415;426
+msgid "Test abord."
+msgstr ""
+
+#: limesurvey_sync.inc:315
+msgid "Undocumented error"
+msgstr ""
+
+#: limesurvey_sync.inc:325
+msgid "Error 401: unauthorized request"
+msgstr ""
+
+#: limesurvey_sync.inc:328
+msgid "Error 400: invalid request"
+msgstr ""
+
+#: limesurvey_sync.inc:331
+msgid "Error 404: page not found"
+msgstr ""
+
+#: limesurvey_sync.inc:334
+msgid "Error %num_error: server replied with an error"
+msgstr ""
+
+#: limesurvey_sync.inc:337
+msgid "Undocumented error : @error"
+msgstr ""
+
+#: limesurvey_sync.inc:354
+msgid "The LimeSurvey site page has been successfully reached"
+msgstr ""
+
+#: limesurvey_sync.inc:358
+msgid "This page does not contain the word 'LimeSurvey'"
+msgstr ""
+
+#: limesurvey_sync.inc:362
+msgid "The LimeSurvey site page has not been reached (%error)"
+msgstr ""
+
+#: limesurvey_sync.inc:365
+msgid "Tested url is :<br />!url"
+msgstr ""
+
+#: limesurvey_sync.inc:369
+msgid "The LimeSurvey site url"
+msgstr ""
+
+#: limesurvey_sync.inc:372
+msgid "If it fails, yo may need to check the <em>LimeSurvey site path</em> setting and save it on the current page."
+msgstr ""
+
+#: limesurvey_sync.inc:385
+msgid "Time on the Drupal server and on the LimeSurvey server is synchronized"
+msgstr ""
+
+#: limesurvey_sync.inc:385
+msgid "Time on the Drupal server and on the LimeSurvey server is not synchronized"
+msgstr ""
+
+#: limesurvey_sync.inc:386
+msgid "If it fails, yo may set the <em>adjust time</em> setting to %delta seconds and save it on the current page."
+msgstr ""
+
+#: limesurvey_sync.inc:386 ls_survey/ls_survey.import.inc:230
+msgid "undefined"
+msgstr ""
+
+#: limesurvey_sync.inc:390
+msgid "Synchronized servers"
+msgstr ""
+
+#: limesurvey_sync.inc:397
+msgid "LimeSurvey global setting page"
+msgstr ""
+
+#: limesurvey_sync.inc:414
+msgid "The LimeSurvey server timezone can not be checked because your LimeSurvey site is hosted on an external server."
+msgstr ""
+
+#: limesurvey_sync.inc:415;426
+msgid "Check it manually on the !link"
+msgstr ""
+
+#: limesurvey_sync.inc:425
+msgid "The server timezone can not be checked."
+msgstr ""
+
+#: limesurvey_sync.inc:449
+msgid "Your LimeSurvey site timezone seems to be correctly set."
+msgstr ""
+
+#: limesurvey_sync.inc:449
+msgid "Your LimeSurvey site timezone may not be not correctly set !"
+msgstr ""
+
+#: limesurvey_sync.inc:449
+msgid "The right setting may be %hours hours."
+msgstr ""
+
+#: limesurvey_sync.inc:455
+msgid "LimeSurvey site Timezone setting"
+msgstr ""
+
+#: limesurvey_sync.inc:458
+msgid "If it fails, yo may check the <em>Time difference</em> setting on your !link."
+msgstr ""
+
+#: limesurvey_sync.inc:459
+msgid "Note : informations from the LimeSurvey admin interface are the trusted ones."
+msgstr ""
+
+#: limesurvey_sync.inc:592
+msgid "Warning"
+msgstr ""
+
+#: limesurvey_sync.inc:596
+msgid "Successful"
+msgstr ""
+
+#: limesurvey_sync.inc:600
+msgid "Failure"
+msgstr ""
+
+#: limesurvey_sync.inc:75;86;96
+msgid "limesurvey_sync"
+msgstr ""
+
+#: limesurvey_sync.inc:75;78
+msgid "The %variable settings have changed : @field from %old_val to %new_val"
+msgstr ""
+
+#: limesurvey_sync.inc:78;89;99 ls_survey/ls_survey.module:409;493;885
+msgid "ls_survey"
+msgstr ""
+
+#: limesurvey_sync.inc:86;89
+msgid "The %variable settings have changed : @field as been added (value is %val)"
+msgstr ""
+
+#: limesurvey_sync.inc:96;99
+msgid "The %variable settings have changed : @field as been deleted (value was %val)"
+msgstr ""
+
+#: limesurvey_sync.module:31
+msgid "set LimeSurvey synchronization"
+msgstr ""
+
+#: limesurvey_sync.module:32
+msgid "To configure the synchronization between your LimeSurvey site and this Drupal site"
+msgstr ""
+
+#: limesurvey_sync.module:43
+msgid "LimeSurvey Sync module enabled"
+msgstr ""
+
+#: limesurvey_sync.module:44
+msgid "In order to set synchronization between Drupal and LimeSurvey, go under <a href=\"@url\">Administer > Site configuration > LimeSurvey Sync</a>"
+msgstr ""
+
+#: limesurvey_sync.module:55
+msgid "LimeSurvey Sync module disabled"
+msgstr ""
+
+#: (duplicate) limesurvey_sync.module:11 limesurvey_sync.install:65  limesurvey_sync.info:0
+msgid "LimeSurvey Sync"
+msgstr ""
+
+#: (duplicate) limesurvey_sync.install:50 
+msgid "LimeSurvey site reachable"
+msgstr ""
+
+#: (duplicate) limesurvey_sync.install:54 
+msgid "LimeSurvey site not reachable"
+msgstr ""
+
+#: (duplicate) limesurvey_sync.install:59 
+msgid "LimeSurvey site may not be reached"
+msgstr ""
+
+#: (duplicate) limesurvey_sync.install:67 
+msgid "The LimeSurvey Sync module needs to connect to the LimeSurvey database and to reach the LimeSurvey site via http. Check the <a href=\"@url\">LimeSurvey setting page</a> for more information."
+msgstr ""
+
+#: limesurvey_sync.info:0
+msgid "Configuring synchronization modules between LimeSurvey and Drupal and providing the API"
+msgstr ""
+
+#: limesurvey_sync.info:0 ls_answ/ls_answ.info:0 ls_survey/ls_survey.info:0
+msgid "LimeSurvey"
+msgstr ""
+
+#: ls_answ/ls_answ.answers.inc:22 ls_survey/ls_survey.inc:562;673 ls_survey/views/ls_survey.views.inc:364
+msgid "Title"
+msgstr ""
+
+#: ls_answ/ls_answ.answers.inc:24
+msgid "Author"
+msgstr ""
+
+#: ls_answ/ls_answ.answers.inc:128
+msgid "Filter results"
+msgstr ""
+
+#: ls_answ/ls_answ.answers.inc:135
+msgid "Show only published answers"
+msgstr ""
+
+#: ls_answ/ls_answ.answers.inc:143
+msgid "Ignore virgin answers"
+msgstr ""
+
+#: ls_answ/ls_answ.answers.inc:150
+msgid "Set the number of answers per page"
+msgstr ""
+
+#: ls_answ/ls_answ.answers.inc:158
+msgid "Filter"
+msgstr ""
+
+#: ls_answ/ls_answ.answers.inc:168;173
+msgid "No respond yet"
+msgstr ""
+
+#: ls_answ/ls_answ.answers.inc:194;208;212;241 ls_answ/ls_answ.module:235 ls_survey/ls_survey.module:79
+msgid "Compare answers"
+msgstr ""
+
+#: ls_answ/ls_answ.answers.inc:206
+msgid "The number of answers per page is not valid"
+msgstr ""
+
+#: ls_answ/ls_answ.answers.inc:217
+msgid "You must check at least 2 answers to compare"
+msgstr ""
+
+#: ls_answ/ls_answ.answers.inc:226
+msgid "To many answers to compare. Uncheck aproximatively %number answers."
+msgstr ""
+
+#: ls_answ/ls_answ.answers.inc:232
+msgid "You can not compare thoses answers"
+msgstr ""
+
+#: ls_answ/ls_answ.answers.inc:304
+msgid "Maching score"
+msgstr ""
+
+#: ls_answ/ls_answ.answers.inc:304
+msgid "The matching score is %score%"
+msgstr ""
+
+#: ls_answ/ls_answ.form.inc:103;152
+msgid "Redirection in progress..."
+msgstr ""
+
+#: ls_answ/ls_answ.form.inc:118 ls_answ/ls_answ.toform.inc:58
+msgid "Go to the survey"
+msgstr ""
+
+#: ls_answ/ls_answ.form.inc:373
+msgid "@type %title has been created."
+msgstr ""
+
+#: ls_answ/ls_answ.form.inc:374
+msgid "@type %title has been updated."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:266
+msgid "Virgin answer settings reseted"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:314
+msgid "The answer is switched back to the virgin status"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:359 ls_answ/ls_answ.module:1163
+msgid "The answer is being edited"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:360
+msgid "The answer is being edited and has been imported"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:361
+msgid "The answer has just been edited"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:362
+msgid "The answer has just been imported"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:426;1382;1416 ls_survey/ls_survey.type.inc:149
+msgid "and"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:964;1127
+msgid "Now processing %node"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1016
+msgid "Processing answers importation"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1017
+msgid "Answers importation is starting."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1018;1179
+msgid "Processed @current out of @total."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1019
+msgid "Answers importation has encountered an error."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1177
+msgid "Processing answers synchronization"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1178
+msgid "Answers synchronization is starting."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1180
+msgid "Answers synchronization has encountered an error."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1200
+msgid "An error occurred"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1281
+msgid "No answer to synchronize."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1314
+msgid "The answer does not need to be imported"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1324
+msgid "The answer does not need to be updated"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1337
+msgid "The answer is not allowed to be imported"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1347
+msgid "The answer is not allowed to be updated"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1367
+msgid "The answer has been correctly imported"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1380;1381
+msgid "the @field '%value' has been set"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1385
+msgid "Importing the answer,"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1399
+msgid "The answer has been updated with no change on the @status and the @sync"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1414;1415
+msgid "the @field has been changed from '%old' to '%new'"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1419
+msgid "Updating the answer,"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1440;1445
+msgid "access not allowed"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1454
+msgid "Concerning the answer entry %aid."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1489
+msgid "The revision from the current node !title :"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1498;1499
+msgid "!answer (rev %rev)"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1909
+msgid "This answer ID (%aid) is resynchronized again."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1922
+msgid "This answer is desynchronized because the connexion to your LimeSurvey database fails. Check the <a href=\"@url\">LimeSurvey Sync settings</a> page in order to fix it."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1930
+msgid "This answer is desynchronized because its survey ID is empty"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1936
+msgid "This answer survey ID (%sid) is desynchronized, it does not exist anymore on your LimeSurvey site. Check the <a href=\"@url\">associated survey edit page</a> in order to fix it."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1945
+msgid "This answer ID (%aid) is desynchronized, it does not exist anymore on your LimeSurvey site."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1951
+msgid "This answer token (%token) is desynchronized, it is not unique into the LimeSurvey database."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1957
+msgid "This answer ID (%aid) is desynchronized because it exists in more than one answers content type (current is %type)."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1966
+msgid "This answer ID (%aid) is desynchronized because it exists in more than one answers node (current is %nid)."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1975
+msgid "Pay attention that the survey <a href=\"@url\">%title</a> associated to this answer actually uses a different survey ID (%sid_survey) on the LimeSurvey site. You can still edit the answer but you will find it under the %sid_answer survey ID reference on your Limesurvey site user interface."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1986
+msgid "This survey language (%lang) is desynchronized, it does not exist anymore on your LimeSurvey site. Check the <a href=\"@url\">associated survey edit page</a> in order to fix it. Default language will be used."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1995
+msgid "Pay attention that the survey <a href=\"@url\">%title</a> associated to this answer actually uses a different default survey language (%lang_survey). Actual is %lang_answer and is still available."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2006
+msgid "This answer ID (%aid) is synchronized, it corresponds to a revision from a valid answer."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2012
+msgid "The synchronization status (%ls_sync) is unknowned."
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2046
+msgid "Not exist"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2048
+msgid "Virgin"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2050
+msgid "Editing"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2052
+msgid "Completed"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2054;2091
+msgid "Unknown"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2065
+msgid "Unsynchronized"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2067
+msgid "Synchronized"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2069
+msgid "Synchronized (old revision)"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2071
+msgid "Desynchronized (new survey language)"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2073
+msgid "Desynchronized (language deleted)"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2075
+msgid "Desynchronized (new survey ID)"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2077
+msgid "Desynchronized (dobloon on nodes)"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2079
+msgid "Desynchronized (dobloon on types)"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2081
+msgid "Desynchronized (token not unique)"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2083
+msgid "Desynchronized (answer deleted)"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2085
+msgid "Desynchronized (survey deleted)"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2087
+msgid "Desynchronized (empty survey ID)"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2089
+msgid "Desynchronized (server connexion fails)"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2101
+msgid "Never"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2142 ls_survey/views/ls_survey.views.inc:365
+msgid "Answer status"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2144 ls_survey/views/ls_survey.views.inc:366
+msgid "Synchronization status"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2146 ls_survey/views/ls_survey.views.inc:367
+msgid "Last import"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2148 ls_survey/ls_survey.inc:559 ls_survey/views/ls_survey.views.inc:369
+msgid "Survey ID"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2150 ls_survey/views/ls_survey.views.inc:370
+msgid "Survey language"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2152 ls_survey/views/ls_survey.views.inc:368
+msgid "Answer ID"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:2154
+msgid "Invitation token"
+msgstr ""
+
+#: ls_answ/ls_answ.inc:1308
+msgid "1 answer does not need to be imported"
+msgid_plural "%count answers don't need to be imported"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ls_answ/ls_answ.inc:1318
+msgid "1 answer does not need to be updated"
+msgid_plural "%count answers don't need to be updated"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ls_answ/ls_answ.inc:1331
+msgid "1 answer is not allowed to be imported"
+msgid_plural "%count answers are not allowed to be imported"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ls_answ/ls_answ.inc:1341
+msgid "1 answer is not allowed to be updated"
+msgid_plural "%count answers are not allowed to be updated"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ls_answ/ls_answ.inc:1361
+msgid "1 answer has been correctly imported"
+msgid_plural "%count answers have been correctly imported"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ls_answ/ls_answ.inc:1374
+msgid "On 1 imported answer,"
+msgid_plural "On %count imported answers,"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ls_answ/ls_answ.inc:1393
+msgid "1 answer has been updated with no change on the @status and the @sync"
+msgid_plural "%count answers have been updated with no change on the @status and the @sync"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ls_answ/ls_answ.inc:1408
+msgid "On 1 updated answer,"
+msgid_plural "On %count updated answers,"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ls_answ/ls_answ.inc:1483
+msgid "one revision from the current node !title :"
+msgid_plural "@count revisions from the current node !title :"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ls_answ/ls_answ.inc:1519
+msgid "On 1 answer to be imported :"
+msgid_plural "On %count answers to be imported :"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ls_answ/ls_answ.inc:1527
+msgid "On 1 answer to be updated :"
+msgid_plural "On %count answers to be updated"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ls_answ/ls_answ.rules.inc:17
+msgid "Response has been completed"
+msgstr ""
+
+#: ls_answ/ls_answ.rules.inc:18;28;38;48
+msgid "Ls answer"
+msgstr ""
+
+#: ls_answ/ls_answ.rules.inc:22;32;42;52
+msgid "Answer"
+msgstr ""
+
+#: ls_answ/ls_answ.rules.inc:27
+msgid "Response is being edited"
+msgstr ""
+
+#: ls_answ/ls_answ.rules.inc:37
+msgid "Response is desynchronized"
+msgstr ""
+
+#: ls_answ/ls_answ.rules.inc:47
+msgid "Response is resynchronized"
+msgstr ""
+
+#: ls_answ/ls_answ.sync.inc:30
+msgid "Synchronization datas"
+msgstr ""
+
+#: ls_answ/ls_answ.sync.inc:42
+msgid "fields"
+msgstr ""
+
+#: ls_answ/ls_answ.sync.inc:43
+msgid "values"
+msgstr ""
+
+#: ls_answ/ls_answ.sync.inc:60 ls_survey/ls_survey.import.inc:125
+msgid "Advanced options"
+msgstr ""
+
+#: ls_answ/ls_answ.sync.inc:67 ls_survey/ls_survey.import.inc:139
+msgid "Force the synchronization"
+msgstr ""
+
+#: ls_answ/ls_answ.sync.inc:82
+msgid "Force the synchronization of this desynchronized answer"
+msgstr ""
+
+#: ls_answ/ls_answ.sync.inc:83 ls_survey/ls_survey.import.inc:147
+msgid "Use with caution."
+msgstr ""
+
+#: ls_answ/ls_answ.sync.inc:91
+msgid "Resynchronize"
+msgstr ""
+
+#: ls_answ/ls_answ.sync.inc:103;106 ls_survey/ls_survey.import.inc:186;189
+msgid "You are not allowed to force the synchronization"
+msgstr ""
+
+#: ls_answ/ls_answ.module:60
+msgid "Allow a user to fill the corresponding survey from your LimeSurvey site."
+msgstr ""
+
+#: ls_answ/ls_answ.module:64 ls_survey/ls_survey.type.inc:200 ls_survey/ls_survey.module:65
+msgid "%type_name: View own content"
+msgstr ""
+
+#: ls_answ/ls_answ.module:67
+msgid "Allow a user to view its own submission"
+msgstr ""
+
+#: ls_answ/ls_answ.module:67
+msgid "This permission should not be fired for anonymous users."
+msgstr ""
+
+#: ls_answ/ls_answ.module:71 ls_survey/ls_survey.module:70
+msgid "%type_name: View any content"
+msgstr ""
+
+#: ls_answ/ls_answ.module:72
+msgid "This permission exposes datas from your LimeSurvey site users."
+msgstr ""
+
+#: ls_answ/ls_answ.module:759
+msgid "Copy of the revision from %date."
+msgstr ""
+
+#: ls_answ/ls_answ.module:812
+msgid "LimeSurvey Sync Responses module enabled"
+msgstr ""
+
+#: ls_answ/ls_answ.module:840 ls_survey/ls_survey.module:440
+msgid "The responses content type !name has been associated again to the survey !survey."
+msgstr ""
+
+#: ls_answ/ls_answ.module:853
+msgid "LimeSurvey Sync Responses module disabled"
+msgstr ""
+
+#: ls_answ/ls_answ.module:883;883;890
+msgid "Respond to the survey"
+msgstr ""
+
+#: ls_answ/ls_answ.module:890
+msgid "Complete the answer"
+msgstr ""
+
+#: ls_answ/ls_answ.module:958
+msgid "The title can not be changed"
+msgstr ""
+
+#: ls_answ/ls_answ.module:991
+msgid "The answer is not available for edition"
+msgstr ""
+
+#: ls_answ/ls_answ.module:996;1121
+msgid "The survey is not currently available"
+msgstr ""
+
+#: ls_answ/ls_answ.module:1001
+msgid "You should not edit the answer"
+msgstr ""
+
+#: ls_answ/ls_answ.module:1006
+msgid "To edit the respond, check here and submit you will be then redirected to the survey form"
+msgstr ""
+
+#: ls_answ/ls_answ.module:1015
+msgid "Edit the survey respond"
+msgstr ""
+
+#: ls_answ/ls_answ.module:1060
+msgid "The answer status is not valid"
+msgstr ""
+
+#: ls_answ/ls_answ.module:1080
+msgid "The answer synchronization status is not valid"
+msgstr ""
+
+#: ls_answ/ls_answ.module:1085
+msgid "The answer last import date is not valid"
+msgstr ""
+
+#: ls_answ/ls_answ.module:1090
+msgid "The answer token is not valid"
+msgstr ""
+
+#: ls_answ/ls_answ.module:1097
+msgid "The survey ID is not valid."
+msgstr ""
+
+#: ls_answ/ls_answ.module:1102 ls_survey/ls_survey.inc:230
+msgid "The survey language is not valid."
+msgstr ""
+
+#: ls_answ/ls_answ.module:1115
+msgid "Only one user at a time can edit an answer"
+msgstr ""
+
+#: ls_answ/ls_answ.module:1135
+msgid "You are not allowed to edit this answer."
+msgstr ""
+
+#: ls_answ/ls_answ.module:841 ls_survey/ls_survey.module:441
+msgid "ls_answ"
+msgstr ""
+
+#: ls_answ/ls_answ.module:841 ls_survey/ls_survey.module:441
+msgid "The responses content type %name has been associated again to the survey %survey."
+msgstr ""
+
+#: ls_answ/ls_answ.module:136 ls_survey/ls_survey.module:147
+msgid "Synchronization"
+msgstr ""
+
+#: ls_answ/ls_answ.module:149
+msgid "All answers"
+msgstr ""
+
+#: ls_answ/ls_answ.module:161;170;180;189
+msgid "Form"
+msgstr ""
+
+#: ls_answ/ls_answ.module:202;214
+msgid "End of survey"
+msgstr ""
+
+#: ls_answ/ls_answ.module:224
+msgid "Responses"
+msgstr ""
+
+#: ls_answ/ls_answ.info:0
+msgid "LimeSurvey Sync Responses"
+msgstr ""
+
+#: ls_answ/ls_answ.info:0
+msgid "create and manage survey responses as nodes"
+msgstr ""
+
+#: ls_answ/views/ls_answ.views.inc:14
+msgid "LS answers"
+msgstr ""
+
+#: ls_answ/views/ls_answ.views.inc:32
+msgid "The answer status, it can be : virgin, editing or completed"
+msgstr ""
+
+#: ls_answ/views/ls_answ.views.inc:48
+msgid "The synchronization status, it can be : unsynchronized, synchronized, desynchronized"
+msgstr ""
+
+#: ls_answ/views/ls_answ.views.inc:67
+msgid "Date of the last import"
+msgstr ""
+
+#: ls_answ/views/ls_answ.views.inc:83
+msgid "The survey ID on the LimeSurvey site"
+msgstr ""
+
+#: ls_answ/views/ls_answ.views.inc:99
+msgid "The survey language on the LimeSurvey site"
+msgstr ""
+
+#: ls_answ/views/ls_answ.views.inc:118
+msgid "The answer ID on the LimeSurvey site"
+msgstr ""
+
+#: ls_answ/views/ls_answ.views.inc:134
+msgid "The invitation and answer token on the LimeSurvey site"
+msgstr ""
+
+#: ls_answ/views/ls_answ.views.inc:153
+msgid "LimeSurvey answers"
+msgstr ""
+
+#: ls_answ/views/ls_answ.views.inc:154
+msgid "LimeSurvey answers nodes"
+msgstr ""
+
+#: ls_answ/views/ls_answ.views.inc:163;166
+msgid "Node"
+msgstr ""
+
+#: ls_answ/views/ls_answ.views.inc:164
+msgid "The LimeSurvey answer node revision"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_answ.inc:263
+msgid "Anonymous"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_answ.inc:740
+msgid "Answers"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_answ.inc:743
+msgid "Section"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_answ.inc:744
+msgid "Questions"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_answ.inc:745
+msgid "Extras"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_answ.inc:750
+msgid "Matching"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_answ.inc:764;839;966 ls_api/limesurvey_sync_api_import.inc:986;998
+msgid "No answer"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_answ.inc:814
+msgid "match"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_answ.inc:822
+msgid "not match"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_answ.inc:828
+msgid "partially match"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_answ.inc:840
+msgid "%answer_summary => @score%"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_answ.inc:907
+msgid "All answers are empty."
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:183
+msgid "Answer properties"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:184 ls_survey/ls_survey.type.inc:250
+msgid "Token"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:185 ls_survey/ls_survey.type.inc:257
+msgid "Date last action"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:186 ls_survey/ls_survey.type.inc:258
+msgid "Date started"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:187 ls_survey/ls_survey.type.inc:263
+msgid "IP address"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:188 ls_survey/ls_survey.type.inc:268
+msgid "Referrer URL"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:190;965;1047
+msgid "Other"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:192
+msgid "Scale 1"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:193
+msgid "Scale 2"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:194
+msgid "Rank %s"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:195
+msgid "Other comment"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:210 ls_survey/ls_survey.type.inc:246
+msgid "Response ID"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:224 ls_survey/ls_survey.type.inc:247
+msgid "Date submitted"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:238 ls_survey/ls_survey.type.inc:248
+msgid "Last page"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:252 ls_survey/ls_survey.type.inc:249
+msgid "Start language"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:973;980;1004 ls_survey/ls_survey.inc:930;931;937;1002
+msgid "Yes"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:983;1007 ls_survey/ls_survey.inc:938;1001
+msgid "No"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:992
+msgid "Male"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:995
+msgid "Female"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1010
+msgid "Uncertain"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1017
+msgid "Increase"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1020
+msgid "Decrease"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1023
+msgid "Same"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1052
+msgid "File count"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1144
+msgid "Arrays"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1145
+msgid "Mask questions"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1146
+msgid "Single choice questions"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1147
+msgid "Multiple choice questions"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1148
+msgid "Text questions"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1153
+msgid "Array dual scale"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1161
+msgid "5 Point Choice"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1169
+msgid "Array (5 Point Choice)"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1177
+msgid "Array (10 Point Choice)"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1185
+msgid "Array (Yes/No/Uncertain)"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1193
+msgid "Date"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1201
+msgid "Array (Increase/Same/Decrease)"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1209
+msgid "Array"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1217
+msgid "Gender"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1225
+msgid "Array by column"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1233
+msgid "Language Switch"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1241
+msgid "Multiple Numerical Input"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1249
+msgid "List (Radio)"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1257
+msgid "Multiple Options"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1265
+msgid "Numerical Input"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1273
+msgid "List with comment"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1281
+msgid "Multiple Options With Comments"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1289
+msgid "Multiple Short Text"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1297
+msgid "Ranking"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1305
+msgid "Short Free Text"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1313
+msgid "Long Free Text"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1321
+msgid "Huge Free Text"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1329
+msgid "Text display"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1337
+msgid "Yes/No"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1345
+msgid "List (Dropdown)"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1353
+msgid "Array (Numbers)"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1361
+msgid "Array (Texts)"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1369
+msgid "File upload"
+msgstr ""
+
+#: ls_api/limesurvey_sync_api_import.inc:1377
+msgid "Equation"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:39
+msgid "an error has occured, you should check the <a href=\"@url\">LimeSurvey Sync settings</a>"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:67
+msgid "Answers stored on this site are not reachable."
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:70 ls_survey/ls_survey.inc:853;858
+msgid "LimeSurvey admin interface"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:72
+msgid "Note that in most cases, there is no interest importing answers from your LimeSurvey site to this site."
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:73
+msgid "Up to now, the answers are already availables on the !link. They can be browsed, edited, deleted, exported, printed as graphs, etc..."
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:74
+msgid "But if you want to access to more advanced features, for instance :"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:77
+msgid "making the answers availables for users which have no access to the LimeSurvey admin interface,"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:78
+msgid "or be able to edit or even delete answers <em>from</em> this site,"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:79
+msgid "or comparing 2 or more answers,"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:80
+msgid "or storing revisions of edited answers,"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:82
+msgid "then you do want to import answers."
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:83
+msgid "Notice"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:85
+msgid "Once you have imported answers, pay attention on :"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:87
+msgid "if you delete an imported answer <em>from</em> this site, the corresponding answer will be deleted on your LimeSurvey site to !"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:88
+msgid "depending on this site <a href=\"@url\">permissions settings</a>, anonymous users may view answers ! (not allowed by default, the risk only exists if you edit the permissions settings)."
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:90
+msgid "Disclaimer"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:97
+msgid "Import answers from The LimeSurvey site"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:108
+msgid "Summary"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:112
+msgid "Import new answers only"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:113
+msgid "Synchronize already imported answers"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:117
+msgid "Choose the synchronization mode"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:119
+msgid "Update answers only if needed."
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:132
+msgid "Verbose results"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:133
+msgid "Print updated or imported answers."
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:140
+msgid "Force the importation of the answer datas, even if it not needed, and import or update uncompleted answers."
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:146
+msgid "Force the synchronization on desynchronized answers"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:156
+msgid "One time synchronization for all languages"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:157
+msgid "This survey node only handle the '%lang' language. If you have create other survey nodes for the survey '%sid', they will be synchronized to."
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:165
+msgid "Synchronize"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:182
+msgid "You are not allowed to import answers"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:208
+msgid "This is not a multilingue survey, at least on this drupal site."
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:212
+msgid "You are not allowed to import answers from some languages"
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:230
+msgid "For privacy raison, you must wait to the survey expiration date (%date) before importing answers."
+msgstr ""
+
+#: ls_survey/ls_survey.import.inc:49
+msgid "There is <b>1</b> %lang answer stored on your LimeSurvey site"
+msgid_plural "There are <b>@count</b> %lang answers stored on your LimeSurvey site"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ls_survey/ls_survey.import.inc:50
+msgid "(of 1 answer)."
+msgid_plural "(of @count answers)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ls_survey/ls_survey.import.inc:64
+msgid "And there is <b>1</b> %lang answer stored on this site."
+msgid_plural "And there are <b>@count</b> %lang answers stored on this site."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ls_survey/ls_survey.inc:30
+msgid "Name for the respond content type #@nid"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:36
+msgid "Respond title"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:150
+msgid "The respond content type \"type\" value is not valid."
+msgstr ""
+
+#: ls_survey/ls_survey.inc:159;170
+msgid "The machine-readable name %type is already taken."
+msgstr ""
+
+#: ls_survey/ls_survey.inc:173
+msgid "The machine-readable name of this content type must contain only lowercase letters, numbers, and underscores."
+msgstr ""
+
+#: ls_survey/ls_survey.inc:186
+msgid "Invalid machine-readable name. Please enter a name other than %invalid."
+msgstr ""
+
+#: ls_survey/ls_survey.inc:212 ls_survey/ls_survey.type.inc:537;540
+msgid "The '%module' module needs to be installed"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:217
+msgid "The Survey ID is not valid."
+msgstr ""
+
+#: ls_survey/ls_survey.inc:223
+msgid "This survey ID does not exist on your LimeSurvey site."
+msgstr ""
+
+#: ls_survey/ls_survey.inc:234
+msgid "This survey language does not exist on your LimeSurvey site."
+msgstr ""
+
+#: ls_survey/ls_survey.inc:253
+msgid "the !node survey"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:253
+msgid "an unauthorized access survey"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:254
+msgid "This survey ID, associated to this language, is already taken by !survey. An alternative way is !copy from the LimeSurvey user interface."
+msgstr ""
+
+#: ls_survey/ls_survey.inc:255
+msgid "to copy this survey"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:262
+msgid "This survey is not currently active, you can !activate on the LimeSurvey user interface."
+msgstr ""
+
+#: ls_survey/ls_survey.inc:262
+msgid "activate it"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:324 ls_survey/ls_survey.module:18
+msgid "Surveys from your LimeSurvey site"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:325
+msgid "Choose a survey and a language"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:335
+msgid "Go to the !link to change those options"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:335
+msgid "administration pages of your LimeSurvey site"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:341
+msgid "Help on LimeSurvey settings for specific features on this site"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:355
+msgid "For custom use"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:477;480
+msgid "Not available"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:480;916
+msgid "Available"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:564
+msgid "Default language"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:567
+msgid "Affected to"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:568;689
+msgid "Description"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:572;739
+msgid "Activated"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:581
+msgid "No survey was found : !link_create or check the !link_settings"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:582
+msgid "create surveys"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:583
+msgid "synchronization settings of your LimeSurvey site"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:635
+msgid "The survey does not exist anymore !"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:636
+msgid "The survey or the language does not exist anymore !"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:637
+msgid "edit"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:643
+msgid "On this site"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:648
+msgid "On the LimeSurvey admin interface"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:665
+msgid "Not associated to an answers content type"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:718
+msgid "Additional languages"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:720;724;768
+msgid "none"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:731
+msgid "Answers can be created"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:744
+msgid "Start date"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:752
+msgid "Expiry date"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:758
+msgid "LimeSurvey end URL, redirecting to this site after completion"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:761
+msgid "Correct end url"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:764
+msgid "actual end url"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:777
+msgid "Correct end url for advanced features only"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:783
+msgid "Answers can be edited"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:792;918
+msgid "Enable token-based response persistence"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:800;917
+msgid "Allow editing answers after completion"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:804
+msgid "The token table is created"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:811
+msgid "Automatic import is available"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:819
+msgid "Anonymized responses set to No"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:824
+msgid "Date stamp set to Yes"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:863
+msgid "Note that this module does not override the LimeSurvey site settings. In order to access to specific features, you need to set appropiate survey settings <em>on the !ls_link</em>"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:864
+msgid "In a nutshell :"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:866
+msgid "For a basic use : you only need to activate the survey."
+msgstr ""
+
+#: ls_survey/ls_survey.inc:867
+msgid "For the most advanced use, you need to :"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:868
+msgid "enable token-based response persistence,"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:869
+msgid "set 'allow editing answers after completion' to <em>yes</em>,"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:870
+msgid "create the invitation token table,"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:871
+msgid "and set on <em>each language</em> the 'end url' to %end_url."
+msgstr ""
+
+#: ls_survey/ls_survey.inc:872
+msgid "For a custom use : check below."
+msgstr ""
+
+#: ls_survey/ls_survey.inc:910
+msgid "Settings on the Limesurvey admin interface"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:915
+msgid "Activate survey"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:919
+msgid "Use token invitations"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:920 ls_survey/ls_survey.type.inc:861
+msgid "End URL"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:921
+msgid "Date stamp"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:922
+msgid "Anonymized responses"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:925
+msgid "Set to :"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:928
+msgid "Currently active"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:929
+msgid "Current time is between the survey start date and expiry date (default setting)"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:932
+msgid "Yes (also called : '<em>switch to closed-access mode</em>', or '<em>initialize token</em>', or '<em>create tokens table</em>'"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:943
+msgid "Basic features"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:944
+msgid "Create survey"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:954
+msgid "Create answers"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:968
+msgid "Advanced features"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:971
+msgid "Edit answers"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:978
+msgid "Import drupal users informations into the LimeSurvey results"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:985
+msgid "Display answer form into an iframe"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:992
+msgid "Redirection to a drupal specific page after completion"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:994
+msgid "Or directly set it as the end url if you don't use neither the auto import answers or the iframe features."
+msgstr ""
+
+#: ls_survey/ls_survey.inc:999
+msgid "Import all answers manually"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:1001;1002
+msgid "If set to %yes_no : after survey expiry date only"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:1006
+msgid "Automatic import answers"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:1006
+msgid "and User view own page after completion"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:1012
+msgid "Generate numeric answer titles"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:1106 ls_survey/views/ls_survey.views.inc:103;359
+msgid "Default survey ID"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:1110 ls_survey/views/ls_survey.views.inc:119;360
+msgid "Default survey language"
+msgstr ""
+
+#: ls_survey/ls_survey.inc:1114 ls_survey/views/ls_survey.views.inc:63;358
+msgid "Answers content type"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:91
+msgid "print a simple hypertext link"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:92
+msgid "print a form button"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:93
+msgid "automatic and immediate redirection"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:94
+msgid "open into a iframe"
+msgstr ""
+
+#: ls_survey.type.inc:97
+msgid "print a link, opening a lightbox in front of the current page (need the '<a href=\"http://drupal.org/project/lightbox2\">lightbox2</a>' drupal custom module)"
+msgstr ""
+
+#: ls_survey.type.inc:98
+msgid "open a lightbox in front of the current page (need the '<a href=\"http://drupal.org/project/modalframe\">Modal Frame API</a>' drupal custom module)"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:103
+msgid "Default options for responses content types"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:103
+msgid "Options for this responses content type"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:104
+msgid "Choose default display options for responses content types"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:104
+msgid "Choose display options for this responses content type"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:112
+msgid "Options for the respond title"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:113
+msgid "Choose how the title associated to each response will be created"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:117
+msgid "the_answers_content_type #"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:120
+msgid "Prefix for the response title"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:128
+msgid "Suffix"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:131
+msgid "An increment number"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:132
+msgid "A random number between :"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:136
+msgid "Suffix, to identify a single response"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:142
+msgid "Minimal number"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:150
+msgid "Maximal number"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:157
+msgid "For example : %title"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:161
+msgid "The responses title can not be changed"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:168
+msgid "Options for the response completing form"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:169
+msgid "Users submits their answers <em>on</em> the LimeSurvey website. Choose options about the completing form."
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:173;560
+msgid "In order to automatically close the frame, you should set on your LimeSurvey admin user interface :"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:177
+msgid "Choose the way to redirect the user to the LimeSurvey site, in order to fill the survey"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:184
+msgid "Choose expiration period for completing the survey"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:186
+msgid "Since printing the survey to its final submission"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:188
+msgid "10 min"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:189
+msgid "1 hour"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:190
+msgid "2 hours"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:191
+msgid "1 day"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:192
+msgid "Unlimited (not recommanded)"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:196
+msgid "its answer view page"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:197
+msgid "this specific page :"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:204
+msgid "Once the form is submitted, redirect the user to"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:205
+msgid "In order to allow a user to view its submission datas, you need to <b>set the appropiate rights</b> (%right) on the <a href=\"@url\">permission setting page</a>"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:212
+msgid "Page to redirect after completion"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:221
+msgid "Options for the response display page"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:222
+msgid "Choose how datas will be displayed on the response page"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:228
+msgid "Print only responded questions"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:229
+msgid "Usefull for large surveys"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:235
+msgid "Merge question groups, questions and subquestion for greater readability"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:241
+msgid "Ignore \"Text display\" question type, also called \"boilerplate questions\""
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:276
+msgid "LimeSurvey fields to be displayed"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:283
+msgid "Options for the response synchronization"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:284
+msgid "Choose how manage datas during synchronization process"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:288
+msgid "Or import answers manually on the <a href=\"@url\">survey synchronization page</a>."
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:288
+msgid "Or import answers manually on the survey synchronization page."
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:291
+msgid "Automatic import answer after completion"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:298
+msgid "Set a specific user as author for the manually imported answers"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:303
+msgid "Leave it blank for the current user, or 0 for Anonymous user."
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:307
+msgid "Adapt the response status depending on the answer is completed or is being edited"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:308
+msgid "Automatic switch to the 'unpublished' status during the edition process and switch back to the 'published' status when the response has been completed."
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:314
+msgid "Fill the token table of the LimeSurvey database with corresponding usernames and emails"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:315
+msgid "Users names and emails from this site will be available into the LimeSurvey results."
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:321
+msgid "Don't delete the answer revision entries store into the LimeSurvey site database"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:322
+msgid "Keeping the answer revision entries allow you to switch back to this revision and being able to edit it again. They will be mark as \"uncompleted reponses\" into the LimeSurvey site user interface. you will need so to select \"include completed answers only\" to ignore them into the statitics."
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:328
+msgid "Always create revision on synchronization process"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:334
+msgid "Recycling virgin responses for the same user"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:335
+msgid "Virgin answers may be generated when the LimeSurvey form is displayed but the user did not submit the first page."
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:340
+msgid "Choose default format filter"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:348
+msgid "@format_name (@format_code)"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:354
+msgid "Only change this if you know what you are doing !"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:366
+msgid "This option needs administrator access rights."
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:390;698;774;830
+msgid "Reset to defaults"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:495
+msgid "You can not disable an empty title."
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:498
+msgid "For privacy raison, you can not change the answers title on anonymized surveys."
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:531
+msgid "For privacy raison, you can choose only random title method on anonymized surveys."
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:547
+msgid "Invalid user specified"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:552
+msgid "You are not not allowed to modify the filter format"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:563
+msgid "You should set on your LimeSurvey admin user interface :"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:569
+msgid "For privacy raison, anonymized or undated surveys can not automatically import answers"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:572
+msgid "In order to automatically import answers, you should set on your LimeSurvey admin user interface :"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:575
+msgid "You need to !create the token table on the LimeSurvey admin interface in order to use the token persistence features"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:575
+msgid "create"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:581
+msgid "Only surveys with token-based response persistence enabled can export users informations"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:587
+msgid "Only surveys that can edit answers may generate revisions"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:590
+msgid "You must enable revsionning in order to store the revisions entries"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:595
+msgid "Only surveys with token-based response persistence enabled may generate virgin answers"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:604
+msgid "You can not edit the default redirection"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:608
+msgid "You can not choose the automatic import feature by default"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:612
+msgid "You can not choose to export user informations by default"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:616
+msgid "You can not choose to recycle virgin answers by default"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:620
+msgid "You can not choose to keep answers revisions by default"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:625
+msgid "In order to be redirected to the answer view page, you need to enable the 'automatically import answers' feature"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:628
+msgid "You can not ask for recycling answers with an unlimited expiration time"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:741
+msgid "You should <a href=\"@url\">resynchronize all existing answers</a> in order to apply changes concerning the display page options"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:754
+msgid "You must <a href=\"@url\">resynchronize all existing answers</a> in order to delete the obsolet revisions entries on your LimeSurvey site"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:759
+msgid "You must <a href=\"@url\">resynchronize all existing answers</a> in order to delete the exported users informations entries on your LimeSurvey site"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:767
+msgid "Exported user informations have been deleted on the LimeSurvey database."
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:860
+msgid "automatically load URL"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:866
+msgid "'!link' to '%end_url' (or an equivalent relative url),"
+msgstr ""
+
+#: ls_survey/ls_survey.type.inc:877
+msgid "and '!link when survey complete ?' to <em>Yes</em> (optional)."
+msgstr ""
+
+#: ls_survey/ls_survey.module:16;41;548
+msgid "Survey"
+msgstr ""
+
+#: ls_survey/ls_survey.module:19 ls_survey/views/ls_survey.views.inc:357
+msgid "Survey title"
+msgstr ""
+
+#: ls_survey/ls_survey.module:39
+msgid "This permission exposes informations from your LimeSurvey site administrator interface."
+msgstr ""
+
+#: ls_survey/ls_survey.module:44
+msgid "%type_name: Create new content"
+msgstr ""
+
+#: ls_survey/ls_survey.module:45
+msgid "Import a survey from your LimeSurvey site into this site."
+msgstr ""
+
+#: ls_survey/ls_survey.module:49
+msgid "%type_name: Edit own content"
+msgstr ""
+
+#: ls_survey/ls_survey.module:54
+msgid "%type_name: Edit any content"
+msgstr ""
+
+#: ls_survey/ls_survey.module:59
+msgid "%type_name: Delete own content"
+msgstr ""
+
+#: ls_survey/ls_survey.module:62
+msgid "%type_name: Delete any content"
+msgstr ""
+
+#: ls_survey/ls_survey.module:75
+msgid "Force answers synchronization"
+msgstr ""
+
+#: ls_survey/ls_survey.module:76
+msgid "Allow to force the answers synchronization with your LimeSurvey site, even if it not needed or for desynchronized answers, for answers from a viewable survey"
+msgstr ""
+
+#: ls_survey/ls_survey.module:80
+msgid "Allow to compare answers from a viewable survey"
+msgstr ""
+
+#: ls_survey/ls_survey.module:408
+msgid "The answers content type !name is not associated to the survey !survey anymore and is handled henceforth by the node module. Synchronization features are not availables anymore. Enable the LimeSurvey Sync Responses module in order to restore the association."
+msgstr ""
+
+#: ls_survey/ls_survey.module:465
+msgid "@type #"
+msgstr ""
+
+#: ls_survey/ls_survey.module:492;493
+msgid "The answers content type %type has been deleted"
+msgstr ""
+
+#: ls_survey/ls_survey.module:548
+msgid "Link to the associated survey edit page"
+msgstr ""
+
+#: ls_survey/ls_survey.module:586
+msgid "LimeSurvey Sync Survey module enabled"
+msgstr ""
+
+#: ls_survey/ls_survey.module:595
+msgid "LimeSurvey Sync Survey module disabled"
+msgstr ""
+
+#: ls_survey/ls_survey.module:611
+msgid "Survey properties"
+msgstr ""
+
+#: ls_survey/ls_survey.module:622
+msgid "To response to the survey"
+msgstr ""
+
+#: ls_survey/ls_survey.module:624
+msgid "New response"
+msgstr ""
+
+#: ls_survey/ls_survey.module:632
+msgid "Responses on real time graphic statistics"
+msgstr ""
+
+#: ls_survey/ls_survey.module:633
+msgid "Choose \"Include\" : \"Completed responses only\" to ignore revisions from responses."
+msgstr ""
+
+#: ls_survey/ls_survey.module:635
+msgid "Statistics"
+msgstr ""
+
+#: ls_survey/ls_survey.module:646
+msgid "Create respond section now !"
+msgstr ""
+
+#: ls_survey/ls_survey.module:648
+msgid "Create respond section to start completing this survey !"
+msgstr ""
+
+#: ls_survey/ls_survey.module:693
+msgid "Content type storing this survey responses"
+msgstr ""
+
+#: ls_survey/ls_survey.module:694
+msgid "This survey is connected to a content type that stores each response as node"
+msgstr ""
+
+#: ls_survey/ls_survey.module:707 ls_survey/views/ls_survey.views.inc:362
+msgid "Type"
+msgstr ""
+
+#: ls_survey/ls_survey.module:712
+msgid "The machine-readable name of this content type. This text will be used for constructing the URL of the <em>create content</em> page for this content type. This name must contain only lowercase letters, numbers, and underscores. Underscores will be converted into hyphens when constructing the URL of the <em>create content</em> page. This name must be unique."
+msgstr ""
+
+#: ls_survey/ls_survey.module:729
+msgid "You can edit it on the <a href=\"@url\">options edit page</a>"
+msgstr ""
+
+#: ls_survey/ls_survey.module:817
+msgid "Invalid machine-readable name. Enter a name other than %invalid."
+msgstr ""
+
+#: ls_survey/ls_survey.module:833
+msgid "Name and description values have been imported from your LimeSurvey website, you can edit them now"
+msgstr ""
+
+#: ls_survey/ls_survey.module:881
+msgid "The responses content type %name has been updated."
+msgstr ""
+
+#: ls_survey/ls_survey.module:884
+msgid "The responses content type %name has been added."
+msgstr ""
+
+#: ls_survey/ls_survey.module:885
+msgid "view"
+msgstr ""
+
+#: ls_survey/ls_survey.module:409
+msgid "The answers content type %name, associated to the survey %survey, is handled henceforth by the node module"
+msgstr ""
+
+#: ls_survey/ls_survey.module:885
+msgid "Added answers content type %name."
+msgstr ""
+
+#: ls_survey/ls_survey.module:135
+msgid "Options"
+msgstr ""
+
+#: ls_survey/ls_survey.info:0
+msgid "LimeSurvey Sync Survey"
+msgstr ""
+
+#: ls_survey/ls_survey.info:0
+msgid "Import a LimeSurvey survey into Drupal as a survey node and a node type for responses"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:12
+msgid "Node type"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:17;361
+msgid "Type machine-name"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:19
+msgid "The type of a node (for example, \"blog\", \"forum\", \"story\", etc)."
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:34;356
+msgid "Answers nodes"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:45
+msgid "Original type machine name"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:46
+msgid "The original machine-readable name of this node type. This may be different from the current type name"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:82
+msgid "LS surveys"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:138
+msgid "Type of the associated answers content type"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:153;355
+msgid "Associated answers content type"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:161
+msgid "LimeSurvey surveys"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:162
+msgid "LimeSurvey surveys nodes"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:172
+msgid "Survey revisions"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:173
+msgid "LimeSurvey survey node revision"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:175
+msgid "Node revision"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:186;189
+msgid "Survey node"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:187
+msgid "LimeSurvey survey node"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:341
+msgid "Master"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:342
+msgid "more"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:343
+msgid "Apply"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:344
+msgid "Reset"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:345
+msgid "Sort by"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:346
+msgid "Asc"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:347
+msgid "Desc"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:348
+msgid "Items per page"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:349
+msgid "- All -"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:350
+msgid "Offset"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:351
+msgid "« first"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:352
+msgid "‹ previous"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:353
+msgid "next ›"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:354
+msgid "last »"
+msgstr ""
+
+#: ls_survey/views/ls_survey.views.inc:363
+msgid "Nid"
+msgstr ""
+
